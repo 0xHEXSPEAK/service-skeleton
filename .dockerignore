@@ -1,0 +1,16 @@
+# Git
+.git
+
+# Environment settings
+.env
+
+# Composers
+vendor
+
+# Runtime
+app/runtime
+api/runtime
+
+# Assets
+app/web/assets
+api/web/assets

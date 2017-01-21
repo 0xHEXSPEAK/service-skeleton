@@ -1,0 +1,39 @@
+data:
+  image: busybox:latest
+  volumes:
+    - ./:/app
+  entrypoint: tail -f /dev/null
+
+app:
+  build: docker/php
+  working_dir: /app
+  volumes_from:
+    - data
+  expose:
+    - 9000
+  links:
+    - db
+  environment:
+    XDEBUG_CONFIG: "idekey=PHPSTORM remote_enable=On remote_connect_back=On"
+
+nginx:
+  image: nginx:latest
+  ports:
+    - "80:80"
+  volumes:
+    - ./:/app
+    - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
+  links:
+    - app
+
+db:
+  image: mysql:5.7
+  volumes:
+    - /var/lib/mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: service-storage
+    MYSQL_USER: api_dbu
+    MYSQL_PASSWORD: api_pass
+    MYSQL_ROOT_PASSWORD: root
