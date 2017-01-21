@@ -15,8 +15,12 @@ Thumbs.db
 # composer vendor dir
 /vendor
 
+# yii app logs
+/api/runtime/debug
+/api/runtime/logs
+
 # nginx logs
-/log
+/var/log
 
 # composer itself is not needed
 composer.phar
