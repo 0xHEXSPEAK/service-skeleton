@@ -5,18 +5,12 @@ Microservice skeleton based on yii2 framework.
 # Docker installation
 **Before installation**
 
-1. Read about [docker] (https://docker.com) and install it.
-2. Then add `127.0.0.1` `service-skeleton.dev` to your `/ets/hosts` file.
+1. Read about [docker] (https://docker.com). You should be familiar with basic concepts before starting.
 
 # Installation
 1. Follow [docker install] (https://docs.docker.com/engine/installation/) instruction
-2. Copy `.env.dist` to `.env` in the project root
-3. Run `docker-compose build`
-4. Run `docker-compose up -d`
-5. Run locally `composer install --prefer-dist --optimize-autoloader --ignore-platform-reqs`
-6. Setup application with `docker-compose run app console/yii app/setup`
-7. That's all - your application is accessible on `http://service-skeleton.dev`
-
+2. Install composer globally (https://getcomposer.org/download/)
+3. Run the following command from the project root `docker/start.sh`
 # Docker FAQ
 **How do i run yii console command?**
 
@@ -27,4 +21,4 @@ etc.
 
 **How to connect to the application database with my workbench?**
 
-MySQL is available on `service-skeleton.dev`, port `3306`. User - `api_dbu`, password - `api_pass`.
+MySQL is available on `localhost`, port `33061`. User - `api_dbu`, password - `api_pass`.

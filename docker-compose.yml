@@ -19,7 +19,7 @@ app:
 nginx:
   image: nginx:latest
   ports:
-    - "80:80"
+    - "8001:8001"
   volumes:
     - ./:/app
     - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
@@ -31,9 +31,9 @@ db:
   volumes:
     - /var/lib/mysql
   ports:
-    - "3306:3306"
+    - "33061:33061"
   environment:
-    MYSQL_DATABASE: service-storage
+    MYSQL_DATABASE: service-skeleton
     MYSQL_USER: api_dbu
     MYSQL_PASSWORD: api_pass
     MYSQL_ROOT_PASSWORD: root
