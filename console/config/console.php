@@ -10,6 +10,9 @@ return [
         ],
         'migrate' => [
             'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => [
+                'api\modules\api\migrations'
+            ],
             'migrationPath' => '@common/migrations/db',
             'migrationTable' => '{{%system_db_migration}}'
         ],

@@ -19,9 +19,6 @@ Thumbs.db
 /api/runtime/debug
 /api/runtime/logs
 
-# nginx logs
-/var/log
-
 # composer itself is not needed
 composer.phar
 
