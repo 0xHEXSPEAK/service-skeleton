@@ -14,5 +14,4 @@ Yii::setAlias('@console', realpath(__DIR__.'/../../console'));
 /**
  * Setting url aliases
  */
-Yii::setAlias('@apiEndpoint', env('API_ENDPOINT'));
 Yii::setAlias('@apiUrl', env('API_URL'));
