@@ -11,6 +11,7 @@ Microservice skeleton based on yii2 framework.
 1. Follow [docker install] (https://docs.docker.com/engine/installation/) instruction
 2. Install composer globally (https://getcomposer.org/download/)
 3. Run the following command from the project root `docker/start.sh`
+
 # Docker FAQ
 **How do i run yii console command?**
 
