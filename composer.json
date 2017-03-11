@@ -1,29 +1,30 @@
 {
-    "name": "gninjava/service-storage",
-    "description": "Service Skeleton Application Template",
+    "name": "0xhexspeak/service-skeleton",
+    "description": "Microservice application template",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
     "keywords": [
         "yii2",
-        "framework",
         "application template",
         "skeleton",
-        "service"
+        "microservice"
     ],
-    "authors": [{
+    "authors": [
+        {
             "name": "Denis Horobtsov",
-            "email": "gninjava@gmail.com",
-            "role": "Developer"
+            "email": "denis@0xhexspeak.cf",
+            "role": "developer"
+        },
+        {
+            "name": "Yaroslav Khortiuk",
+            "email": "yarik@0xhexspeak.cf",
+            "role": "developer"
         }
     ],
-    "type": "project",
-    "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "email": "info@0xhexspeak.cf"
     },
-    "minimum-stability": "stable",
     "require": {
         "php": ">=5.5.0",
         "ext-intl": "*",
@@ -31,7 +32,7 @@
         "yiisoft/yii2-bootstrap": "^2.0.0",
         "yiisoft/yii2-authclient": "^2.0.0",
         "trntv/cheatsheet": "^0.1@dev",
-        "vlucas/phpdotenv": "^2.0",
+        "vlucas/phpdotenv": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "^2.0.0",
@@ -45,5 +46,5 @@
     },
     "config": {
         "process-timeout": 1800
-    },
+    }
 }
